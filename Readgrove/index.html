@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadGrove</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alef&family=Allerta+Stencil&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>ReadGrove</h1>
+        <h4>Your Secret Collection!!!</h4>
+    </div>
+    <div class="container">
+        <div class="book-container">
+            <h2>The Alchemist</h2>
+            <h4>Paulo Coelho</h4>
+            <p>The Alchemist is a novel by Brazilian author Paulo Coelho which was first published in 1988. Originally written in Portuguese, it became a widely translated international bestseller. An allegorical novel, The Alchemist follows a young Andalusian shepherd in his journey to the pyramids of Egypt, after having a recurring dream of finding a treasure there.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup-overlay">
+        <div class="popup-box">
+            <h2>Add Book</h2>
+            <form>
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="ShortDescription" id="book-description-input"></textarea>
+                <button id="add-book">Add</button>
+                <button id="cancel-popup">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
